@@ -1,6 +1,6 @@
-package com.example.demo;
+package com.example.springcloudserverless1;
 
-import com.example.demo.model.User;
+import com.example.springcloudserverless1.model.User;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -16,9 +16,9 @@ public class Springcloudserverless1Application {
 
 	@Bean
 	public Function<User, User> registerUser() {
-		System.out.println("registerUser");
+		System.out.println("Entered registerUser");
 		return user -> {
-			System.out.println("user: " + user);
+			System.out.println("registerUser | user: " + user);
 			user.setStatus("REGISTERED");
 			return user;
 		};

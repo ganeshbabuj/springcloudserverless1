@@ -1,4 +1,4 @@
-package com.example.demo.model;
+package com.example.springcloudserverless1.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class User {
+
     private String name;
 
     @JsonProperty(access = JsonProperty.Access.READ_ONLY)
